@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.serein.extras.navigation;
+package com.shell.extras.navigation;
 
 import android.view.ViewGroup;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.serein.extras.navigation;
+package com.shell.extras.navigation;
 
 import static android.support.annotation.RestrictTo.Scope.GROUP_ID;
 

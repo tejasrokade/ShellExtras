@@ -34,7 +34,7 @@ import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.serein.extras.preferences.CustomSeekBarPreference;
+import com.shell.extras.preferences.CustomSeekBarPreference;
 
 public class NetworkTraffic extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
