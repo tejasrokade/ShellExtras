@@ -21,6 +21,13 @@
             android:title="@string/battery_style_category_title"
             android:icon="@drawable/ic_battery_title"
             android:summary="@string/battery_style_category_summary"
-            android:fragment="com.serein.extras.fragments.StatusBarBattery" />
+            android:fragment="com.shell.extras.fragments.StatusBarBattery" />
+
+    <Preference
+         android:key="network_traffic"
+         android:title="@string/traffic_title"
+         android:icon="@drawable/ic_traffic"
+         android:summary="@string/traffic_summary"
+         android:fragment="com.shell.extras.fragments.NetworkTraffic" />
 
 </PreferenceScreen>
