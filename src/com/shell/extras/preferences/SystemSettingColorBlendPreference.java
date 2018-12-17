@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nest.settings.preferences;
+package com.shell.extras.preferences;
 
 import android.content.Context;
 import android.util.AttributeSet;

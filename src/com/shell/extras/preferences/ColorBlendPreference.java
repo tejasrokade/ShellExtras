@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.nest.settings.preferences;
+package com.shell.extras.preferences;
 
 import android.app.AlertDialog;
 import android.content.Context;
