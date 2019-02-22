@@ -31,6 +31,8 @@
     <string name="ticker_warning_text">The ticker feature is meant to be used as a mulitasking tool and brings a bit of splash of the old times. Just know that while you use the ticker feature, you will not be able to use heads up notifications.</string>
 
     <!-- Categories -->
+    <string name="lockscreen_title">Lock Screen</string>
+
     <!-- System -->
     <string name="device_extras_title">Device extras</string>
     <string name="device_extras_summary">Tweaks specific to your device</string>
@@ -145,5 +147,9 @@
     <string name="clock_date_format">Date format</string>
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
 
 </resources>
