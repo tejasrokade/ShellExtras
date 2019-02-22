@@ -32,6 +32,8 @@
 
     <!-- Categories -->
     <string name="lockscreen_title">Lock Screen</string>
+    <string name="system_title">System</string>
+    <string name="statusbar_title">Statusbar</string>
 
     <!-- System -->
     <string name="device_extras_title">Device extras</string>
