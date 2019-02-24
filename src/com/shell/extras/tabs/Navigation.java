@@ -36,19 +36,10 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class Navigation extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
-    private Preference mChargingLeds;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.navigation);
-
-        mChargingLeds = (Preference) findPreference("charging_light");
-        if (mChargingLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            prefScreen.removePreference(mChargingLeds);
-        }
    }
 
     @Override

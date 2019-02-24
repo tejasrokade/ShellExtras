@@ -27,6 +27,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.shell.extras.preferences.Utils;
 
 import com.android.settings.R;
 
@@ -36,10 +37,20 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class System extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+    private Preference mChargingLeds;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.system);
+
+    PreferenceScreen prefScreen = getPreferenceScreen();
+    mChargingLeds = (Preference) findPreference("charging_light");
+        if (mChargingLeds != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            prefScreen.removePreference(mChargingLeds);
+        }
     }
 
     @Override

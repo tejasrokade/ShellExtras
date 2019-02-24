@@ -30,7 +30,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.android.internal.util.scorpion.Utils;
+import com.android.internal.util.pearl.PearlUtils;
 
 import net.margaritov.preference.colorpicker.NewColorPickerDialog;
 
@@ -314,7 +314,7 @@ public class ColorBlendPreference extends Preference
     private void updateDialogSliderPreview() {
         int currentPreview = mDialogColorPreviewSlider.getProgress();
         mDialogPreviewColorBetween.setBackgroundColor(
-                Utils.getBlendColorForPercent(mPreviewColorEnd, mPreviewColorStart,
+                PearlUtils.getBlendColorForPercent(mPreviewColorEnd, mPreviewColorStart,
                         mPreviewBlendReverse, currentPreview));
         mDialogColorPreviewText.setText(
                 getContext().getString(R.string.color_blend_preview, currentPreview));
@@ -374,7 +374,7 @@ public class ColorBlendPreference extends Preference
         }
         if (mViewColorBetween != null) {
             mViewColorBetween.setBackgroundColor(
-                    Utils.getBlendColorForPercent(mColorEnd, mColorStart, mBlendReverse, 50));
+                    PearlUtils.getBlendColorForPercent(mColorEnd, mColorStart, mBlendReverse, 50));
         }
     }
 
