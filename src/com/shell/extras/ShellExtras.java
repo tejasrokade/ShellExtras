@@ -20,6 +20,8 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -51,6 +53,10 @@ public class ShellExtras extends SettingsPreferenceFragment {
     MenuItem menuitem;
 
     PagerAdapter mPagerAdapter;
+
+    public static final String ABOUT_PACKAGE_NAME = "com.pearl.about";
+    public static Intent INTENT_ABOUT = new Intent(Intent.ACTION_MAIN)
+            .setClassName(ABOUT_PACKAGE_NAME, ABOUT_PACKAGE_NAME + ".MainActivity");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -172,8 +178,9 @@ public class ShellExtras extends SettingsPreferenceFragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case 0:
-                final TeamFragment dialog = new TeamFragment();
-                showDialog(this, dialog);
+                if (INTENT_ABOUT != null) {
+                    startActivity(INTENT_ABOUT);
+                }
                 return true;
             default:
                 return false;
